@@ -2,10 +2,13 @@
 set LOCAL_PATH=%cd%
 
 :: Iniciando o processo
+echo ----------------------------------
 echo Iniciando configuracao, aguarde...
-timeout /t 2 /nobreak > NUL
+echo ----------------------------------
+timeout /t 5 /nobreak > NUL
 
 :: Cria o disco Z com label ENSINARTE
 diskpart /s %LOCAL_PATH%/script/partition.txt
-echo final
+echo Criado o Disco Local Z: ENSINARTE
+echo ----------------------------------
 timeout /t 5 /nobreak
