@@ -1,0 +1,11 @@
+select disk 0
+
+select volume C
+
+shrink desired=8400
+
+create partition primary
+
+format quick fs=ntfs label=ENSINARTE
+
+assign letter=Z
